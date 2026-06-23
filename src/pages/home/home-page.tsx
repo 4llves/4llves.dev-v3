@@ -3,9 +3,9 @@ import { TerminalWindow } from "./terminal-window";
 
 export function HomePage() {
   return (
-    <section className="flex w-full gap-6">
+    <section className="flex w-full items-center gap-6">
       <Hero />
       <TerminalWindow />
     </section>
-  )
+  );
 }

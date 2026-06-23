@@ -97,12 +97,22 @@ Os estilos globais ficam em `src/index.css` com:
 ## Scripts
 
 ```bash
-npm run dev
-npm run build
-npm run lint
-npm run typecheck
-npm run preview
+pnpm install
+pnpm dev
+pnpm build
+pnpm lint
+pnpm format
+pnpm typecheck
+pnpm preview
 ```
+
+## Gerenciador de pacotes
+
+Este projeto usa `pnpm` como padrao.
+
+- instale dependencias com `pnpm install`
+- rode scripts com `pnpm <script>`
+- evite misturar com `npm` para nao gerar lockfiles e fluxos inconsistentes
 
 ## Convencoes atuais
 

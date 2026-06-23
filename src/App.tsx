@@ -1,8 +1,7 @@
-import { HomePage } from "./pages/home/home-page"
-
+import { HomePage } from "./pages/home/home-page";
 
 export function App() {
-  return <HomePage />
+  return <HomePage />;
 }
 
-export default App
+export default App;

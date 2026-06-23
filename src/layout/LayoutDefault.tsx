@@ -1,32 +1,22 @@
-import type { ReactNode } from "react"
-import { cn } from "@/lib/utils"
-import { Header } from "./Header"
+import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
+import { Header } from "./Header";
 
 type LayoutDefaultProps = {
-  children: ReactNode
-  className?: string  
-}
+  children: ReactNode;
+  className?: string;
+};
 
-export function LayoutDefault({
-  children,
-  className  
-}: LayoutDefaultProps) {
-
+export function LayoutDefault({ children, className }: LayoutDefaultProps) {
   return (
     <div className="relative h-dvh overflow-hidden bg-background text-foreground">
       <Header />
-      <main
-        className={cn(
-          "mx-auto flex w-full max-w-6xl flex-1 py-10",
-          className
-        )}
-      >
+      <main className={cn("mx-auto flex w-full max-w-6xl flex-1 py-10", className)}>
         {children}
       </main>
     </div>
-  )
+  );
 }
-
 
 // import type { ReactNode } from "react"
 

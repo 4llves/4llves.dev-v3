@@ -1,7 +1,7 @@
 export function Header() {
   return (
-    <div className="flex mx-auto w-full justify-center border border-b-white/10">
-      <header className="w-full max-w-6xl h-16 flex items-center justify-between">
+    <div className="mx-auto flex w-full justify-center border border-b-white/10">
+      <header className="flex h-16 w-full max-w-6xl items-center justify-between">
         <div className="">
           <a href="#">4llves.dev</a>
         </div>
@@ -17,5 +17,5 @@ export function Header() {
         </div>
       </header>
     </div>
-  )
+  );
 }

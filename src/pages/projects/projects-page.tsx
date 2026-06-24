@@ -39,8 +39,10 @@ export function ProjectsPage() {
     <section className="flex w-full flex-col gap-6 pt-12">
       <div className="flex flex-col gap-8">
         <div>
-          <h2 className="text-3xl font-bold">Tech Stack</h2>
-          <p className="text-lg">Tools I use to bring ideas to life.</p>
+          <h2 className="text-3xl font-bold">Featured Projects</h2>
+          <p className="text-lg">
+            Building the next generation of web applications with cutting-edge technologies.
+          </p>
         </div>
 
         <div className="flex w-full justify-between">

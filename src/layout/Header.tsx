@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div className="mx-auto flex w-full justify-center border border-b-white/10">
+    <div className="fixed inset-x-0 top-0 z-50 flex justify-center border-b border-white/10 bg-background/80 backdrop-blur-md">
       <header className="flex h-16 w-full max-w-6xl items-center justify-between">
         <div className="">
           <a href="#">4llves.dev</a>

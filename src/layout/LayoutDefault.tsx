@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 type LayoutDefaultProps = {
   children: ReactNode;
@@ -11,9 +12,10 @@ export function LayoutDefault({ children, className }: LayoutDefaultProps) {
   return (
     <div className="relative min-h-dvh overflow-x-hidden bg-background text-foreground">
       <Header />
-      <main className={cn("mx-auto flex w-full max-w-6xl flex-1 py-10", className)}>
+      <main className={cn("mx-auto flex w-full max-w-6xl flex-1 px-0 pt-26", className)}>
         {children}
       </main>
+      <Footer />
     </div>
   );
 }

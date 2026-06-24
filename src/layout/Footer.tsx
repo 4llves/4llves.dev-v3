@@ -6,7 +6,7 @@ export function Footer() {
           <a href="#">4llves.dev</a>
         </div>
 
-        <p>© 2024 4llves.dev • Built with precision</p>
+        <p>© 2026 4llves.dev • Built with precision</p>
         <div className="flex gap-3">
           <a href="#">GITHUB</a>
           <a href="#">LINKEDIN</a>

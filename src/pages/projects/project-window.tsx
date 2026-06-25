@@ -31,14 +31,17 @@ export function ProjectWindow({
           <Circle size={12} className="fill-green-400" color="none" />
         </div>
 
-        <span className="text-lg font-semibold text-[#8e9192]">{title}</span>
+        <div className="flex justify-center gap-1.5">
+          <img src={bgImage} alt="#" className="w-16" />
+          <span className="text-lg font-semibold text-[#8e9192]">{title}</span>
+        </div>
       </div>
 
       {/* corpo janela */}
       <div className="relative flex w-full flex-col gap-4 overflow-hidden border border-[#262626] bg-[#111111] p-7 text-sm">
         {/* <div className="pointer-events-none absolute inset-0 bg-[url('/logo-full-w.svg')] bg-size-[80%] bg-center bg-no-repeat opacity-25" /> */}
         <div
-          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-5"
+          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
           style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "80%" }}
         />
         <div className="flex">
@@ -64,9 +67,9 @@ export function ProjectWindow({
             description:{" "}
             <span className="text-(--txt-blue-low-window)">"{descriptionProject}"</span>,
           </p>
-          <p className="pl-4 text-(--txt-window)">
+          <a className="w-min pl-4 text-(--txt-window)" href={liveUrl}>
             liveUrl: <span className="text-(--txt-blue-low-window)">"{liveUrl}"</span>,
-          </p>
+          </a>
           <p className="pl-4 text-(--txt-window)">
             techs:{" "}
             <span className="text-(--txt-blue-low-window)">

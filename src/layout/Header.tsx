@@ -7,10 +7,10 @@ export function Header() {
         </div>
 
         <nav className="flex gap-6">
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">Experience</a>
-          <a href="#">Contact</a>
+          <a href="#">Inicio</a>
+          <a href="#">Projetos</a>
+          <a href="#">Experiência</a>
+          <a href="#">Contato</a>
         </nav>
         <div>
           <img src="/terminal.svg" alt="Terminal" />

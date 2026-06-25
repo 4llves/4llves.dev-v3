@@ -3,8 +3,8 @@ export function TechStack() {
     <section className="flex w-full flex-col gap-6">
       <div className="flex flex-col gap-8">
         <div>
-          <h2 className="text-3xl font-bold">Tech Stack</h2>
-          <p className="text-lg">Tools I use to bring ideas to life.</p>
+          <h2 className="text-3xl font-bold">Tecnologias:</h2>
+          <p className="text-lg">Ferramentas que uso para dar vida a ideias.</p>
         </div>
 
         <div className="flex w-full gap-5">

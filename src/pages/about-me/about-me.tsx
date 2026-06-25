@@ -8,11 +8,11 @@ export function AboutMe() {
       <div className="flex h-auto w-6xl flex-col gap-4 rounded-r-2xl border border-[#262626FF] bg-[#171717FF] p-12 text-[#c4c7c7]">
         <div className="flex items-center gap-2">
           <User color="#8e9192FF" className="w-4" />
-          <span className="text-sm text-[#8e9192FF]">ABOUT ME</span>
+          <span className="text-sm text-[#8e9192FF] uppercase">sobre mim</span>
         </div>
 
         <div>
-          <h2 className="text-3xl text-[#e2e2e2FF]">The Journey</h2>
+          <h2 className="text-3xl text-[#e2e2e2FF]">A Jornada</h2>
         </div>
 
         <div>
@@ -22,18 +22,18 @@ export function AboutMe() {
         </div>
         <div>
           <p>
-            I specialize in bridging the gap between complex backend architecture and sleek,
-            intuitive user interfaces. My approach is rooted in writing clean, maintainable code and
-            designing systems that scale effortlessly.
+            Olá sou Jhonata Alves, tenho 29 anos e sou apaixonado por tecnologia desde os 9.
+            Atualmente atuo como Desenvolvedor Full-Stack, criando aplicações web modernas, rápidas
+            e intuitivas. Moro no Pará e estou sempre em busca de aprender novas tecnologias e
+            transformar boas ideias em soluções digitais.
           </p>
         </div>
 
         <div className="flex gap-2">
-          <span className="rounded-sm border border-[#262626] px-3 py-1">BACKEND ARCHITECTURE</span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">FRONT END</span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">BACK END</span>
           <span className="rounded-sm border border-[#262626] px-3 py-1">UI/UX DESIGN</span>
-          <span className="rounded-sm border border-[#262626] px-3 py-1">
-            PERFORMACE OPTIMIZATION
-          </span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">RPA</span>
         </div>
       </div>
     </section>

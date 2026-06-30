@@ -36,7 +36,7 @@ const projects: ProjecstProps[] = [
 
 export function ProjectsPage() {
   return (
-    <section className="flex w-full flex-col gap-6 pt-12">
+    <section id="projects" className="flex w-full flex-col gap-6 pt-12">
       <div className="flex flex-col gap-8">
         <div>
           <h2 className="text-3xl font-bold">Projetos em Destaque</h2>

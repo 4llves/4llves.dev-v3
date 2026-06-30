@@ -3,7 +3,7 @@ import { ArrowRight, Circle } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="flex w-full max-w-[600px] flex-col gap-6">
+    <section id="hero" className="flex w-full max-w-[600px] flex-col gap-6">
       <div className="flex flex-col gap-8">
         <span className="flex max-w-2xs items-center justify-center gap-2 rounded-4xl border-2 border-[#262626] px-3 py-1 text-xs font-semibold text-(--txt-blue-strong-window) uppercase">
           <Circle size={16} className="fill-(--txt-blue-strong-window)" color="none" />

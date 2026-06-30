@@ -2,7 +2,7 @@ import { User } from "lucide-react";
 
 export function AboutMe() {
   return (
-    <section className="flex w-full pt-20">
+    <section id="about-me" className="flex w-full pt-20">
       <div className="w-2 self-stretch rounded-l-2xl bg-(--txt-blue-strong-window)" />
 
       <div className="flex h-auto w-6xl flex-col gap-4 rounded-r-2xl border border-[#262626FF] bg-[#171717FF] p-12 text-[#c4c7c7]">

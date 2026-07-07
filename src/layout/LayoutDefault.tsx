@@ -12,7 +12,9 @@ export function LayoutDefault({ children, className }: LayoutDefaultProps) {
   return (
     <div className="relative min-h-dvh overflow-x-hidden bg-background text-foreground">
       <Header />
-      <main className={cn("mx-auto flex w-full max-w-6xl flex-1 px-0 pt-26", className)}>
+      <main
+        className={cn("mx-auto flex w-full max-w-6xl flex-1 px-4 pt-36 sm:px-6 lg:px-0 lg:pt-26", className)}
+      >
         {children}
       </main>
       <Footer />

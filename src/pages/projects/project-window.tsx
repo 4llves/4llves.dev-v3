@@ -22,7 +22,7 @@ export function ProjectWindow({
   year,
 }: ProjecstProps) {
   return (
-    <section className="flex w-[520px] flex-col rounded-xl border">
+    <section className="flex w-full max-w-full flex-col rounded-xl border xl:max-w-[520px]">
       {/* barra topo janela */}
       <div className="flex h-[36px] w-full items-center justify-between rounded-t-xl border border-[#262626] bg-[#171717] px-4">
         <div className="flex gap-2">
@@ -31,14 +31,14 @@ export function ProjectWindow({
           <Circle size={12} className="fill-green-400" color="none" />
         </div>
 
-        <div className="flex justify-center gap-1.5">
-          <img src={bgImage} alt="#" className="w-16" />
-          <span className="text-lg font-semibold text-[#8e9192]">{title}</span>
+        <div className="flex min-w-0 items-center justify-center gap-1.5">
+          <img src={bgImage} alt="#" className="w-12 sm:w-16" />
+          <span className="truncate text-sm font-semibold text-[#8e9192] sm:text-lg">{title}</span>
         </div>
       </div>
 
       {/* corpo janela */}
-      <div className="relative flex w-full flex-col gap-4 overflow-hidden border border-[#262626] bg-[#111111] p-7 text-sm">
+      <div className="relative flex w-full flex-col gap-4 overflow-hidden border border-[#262626] bg-[#111111] p-4 text-xs sm:p-7 sm:text-sm">
         {/* <div className="pointer-events-none absolute inset-0 bg-[url('/logo-full-w.svg')] bg-size-[80%] bg-center bg-no-repeat opacity-25" /> */}
         <div
           className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
@@ -67,7 +67,7 @@ export function ProjectWindow({
             description:{" "}
             <span className="text-(--txt-blue-low-window)">"{descriptionProject}"</span>,
           </p>
-          <a className="w-min pl-4 text-(--txt-window)" href={liveUrl}>
+          <a className="w-full break-all pl-4 text-(--txt-window)" href={liveUrl}>
             liveUrl: <span className="text-(--txt-blue-low-window)">"{liveUrl}"</span>,
           </a>
           <p className="pl-4 text-(--txt-window)">
@@ -86,7 +86,7 @@ export function ProjectWindow({
           <p className="text-(--txt-window)">{"});"}</p>
         </div>
 
-        <div className="flex max-w-[250px] flex-col">
+        <div className="flex max-w-full flex-col sm:max-w-[250px]">
           <p className="text-(--txt-window)">
             profile.<span className="text-(--txt-blue-strong-window)">initialize</span>().
             <span className="text-(--txt-blue-strong-window)">then</span>(( ){" "}

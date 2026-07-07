@@ -107,8 +107,10 @@ export function TerminalWindow() {
 
   return (
     <section
-      className={`flex flex-col rounded-xl border border-white/10 shadow-[-10px_0_60px_rgba(34,211,238,0.12),10px_0_60px_rgba(192,132,252,0.12)] transition-all duration-300 ${
-        isMinimized ? "fixed bottom-6 left-6 z-50 w-[360px]" : "animate-float w-[520px]"
+      className={`flex max-w-full flex-col rounded-xl border border-white/10 shadow-[-10px_0_60px_rgba(34,211,238,0.12),10px_0_60px_rgba(192,132,252,0.12)] transition-all duration-300 ${
+        isMinimized
+          ? "fixed right-4 bottom-4 left-4 z-50 w-auto sm:right-auto sm:left-6 sm:w-[360px]"
+          : "w-full animate-float lg:w-[520px]"
       } ${isFullscreen ? "fixed inset-0 z-50 h-screen w-screen rounded-none bg-[#111111]" : ""} `}
     >
       <div
@@ -128,12 +130,12 @@ export function TerminalWindow() {
           </button>
         </div>
 
-        <span className="text-lg font-semibold text-[#8e9192]">hello.ts</span>
+        <span className="text-sm font-semibold text-[#8e9192] sm:text-lg">hello.ts</span>
       </div>
 
       {!isMinimized && (
         <div
-          className={`flex w-full flex-col gap-4 border border-[#262626] bg-[#111111] p-7 text-sm ${isFullscreen ? "h-full" : ""} `}
+          className={`flex w-full flex-col gap-4 overflow-hidden border border-[#262626] bg-[#111111] p-4 text-xs sm:p-7 sm:text-sm ${isFullscreen ? "h-full overflow-y-auto" : ""} `}
         >
           <div className="flex">
             <p className="text-(--txt-purple-window)">
@@ -174,7 +176,7 @@ export function TerminalWindow() {
             <p className="text-(--txt-window)">{"});"}</p>
           </div>
 
-          <div className="flex max-w-[250px] flex-col">
+          <div className="flex max-w-full flex-col sm:max-w-[250px]">
             <p className="text-(--txt-window)">
               profile.<span className="text-(--txt-blue-strong-window)">initialize</span>().
               <span className="text-(--txt-blue-strong-window)">then</span>(( ){" "}

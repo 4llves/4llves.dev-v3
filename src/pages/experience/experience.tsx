@@ -41,7 +41,7 @@ const experiences: ExperienceItem[] = [
 
 export function Experience() {
   return (
-    <section id="experience" className="flex w-full flex-col gap-12 pt-16">
+    <section id="experience" className="flex w-full flex-col gap-10 pt-16">
       <div className="max-w-2xl space-y-3">
         <h2 className="font-heading text-4xl font-semibold tracking-tight text-[#f1f3f4] sm:text-5xl">
           Experience & Timeline
@@ -51,7 +51,7 @@ export function Experience() {
         </p>
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 py-4 before:absolute before:top-0 before:bottom-0 before:left-4 before:w-px before:bg-cyan-400/30 md:before:left-1/2 md:before:-translate-x-1/2">
+      <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-10 py-4 before:absolute before:top-0 before:bottom-0 before:left-4 before:w-px before:bg-cyan-400/30 md:gap-14 md:before:left-1/2 md:before:-translate-x-1/2">
         {experiences.map((experience) => {
           const isRight = experience.side === "right";
 
@@ -66,12 +66,12 @@ export function Experience() {
                   isRight ? "md:col-start-1 md:text-right" : "md:order-3 md:col-start-3",
                 ].join(" ")}
               >
-                <div className="space-y-2 pl-12 md:pl-0">
+                <div className="space-y-2 pl-10 md:pl-0">
                   <span className="text-xs font-semibold tracking-[0.24em] text-cyan-400 uppercase">
                     {experience.period}
                   </span>
                   <div className="space-y-1">
-                    <h3 className="font-heading text-2xl font-semibold text-[#f1f3f4]">
+                    <h3 className="font-heading text-xl font-semibold text-[#f1f3f4] sm:text-2xl">
                       {experience.role}
                     </h3>
                     <p className="text-sm text-[#b8bec8]">{experience.company}</p>
@@ -93,7 +93,7 @@ export function Experience() {
                   isRight ? "md:col-start-3" : "md:col-start-1 md:text-right",
                 ].join(" ")}
               >
-                <div className="ml-12 space-y-5 border border-white/8 bg-[#171717] px-6 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:ml-0">
+                <div className="ml-10 space-y-5 border border-white/8 bg-[#171717] px-4 py-5 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] sm:px-6 sm:py-6 md:ml-0">
                   <p className="max-w-md text-sm leading-7 text-[#e5e7eb] md:max-w-none">
                     {experience.description}
                   </p>

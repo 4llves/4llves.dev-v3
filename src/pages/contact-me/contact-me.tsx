@@ -52,7 +52,7 @@ export function ContactMe() {
             <Button
               type="submit"
               variant="secondary"
-              className="h-11 rounded-none border border-[#d9dde0] bg-[#eef1f3] px-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#111315] hover:bg-white"
+              className="h-11 w-full rounded-none border border-[#d9dde0] bg-[#eef1f3] px-6 text-xs font-semibold uppercase tracking-[0.2em] text-[#111315] hover:bg-white sm:w-auto"
             >
               Send Message
               <SendHorizonal className="size-4" />

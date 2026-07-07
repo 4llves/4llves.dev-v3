@@ -39,11 +39,11 @@ export function ProjectsPage() {
     <section id="projects" className="flex w-full flex-col gap-6 pt-12">
       <div className="flex flex-col gap-8">
         <div>
-          <h2 className="text-3xl font-bold">Projetos em Destaque</h2>
-          <p className="text-lg">Alguns dos projetos que transformei em realidade.</p>
+          <h2 className="text-3xl font-bold sm:text-4xl">Projetos em Destaque</h2>
+          <p className="text-base sm:text-lg">Alguns dos projetos que transformei em realidade.</p>
         </div>
 
-        <div className="flex w-full justify-between">
+        <div className="flex w-full flex-col gap-6 xl:flex-row xl:justify-between">
           {projects.map((item, i) => {
             return (
               <ProjectWindow

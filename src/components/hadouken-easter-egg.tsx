@@ -16,6 +16,7 @@ function isEditableTarget(target: EventTarget | null) {
 
 export function HadoukenEasterEgg() {
   const [isVisible, setIsVisible] = useState(false);
+  const [animationKey, setAnimationKey] = useState(0);
   const sequenceIndexRef = useRef(0);
   const timeoutRef = useRef<number | null>(null);
 
@@ -29,11 +30,12 @@ export function HadoukenEasterEgg() {
 
     const showHadouken = () => {
       clearVisibilityTimeout();
+      setAnimationKey((current) => current + 1);
       setIsVisible(true);
       timeoutRef.current = window.setTimeout(() => {
         setIsVisible(false);
         timeoutRef.current = null;
-      }, 5000);
+      }, 3000);
     };
 
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -72,7 +74,12 @@ export function HadoukenEasterEgg() {
 
   return (
     <div className="pointer-events-none fixed right-2 bottom-0 z-[60]">
-      <img src="/hadouken.gif" alt="Hadouken" className="h-48 w-48 object-contain" />
+      <img
+        key={animationKey}
+        src="/hadouken.gif"
+        alt="Hadouken"
+        className="h-48 w-48 object-contain"
+      />
     </div>
   );
 }

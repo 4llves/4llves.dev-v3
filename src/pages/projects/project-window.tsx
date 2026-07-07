@@ -3,6 +3,7 @@ import { Circle } from "lucide-react";
 type ProjecstProps = {
   title: string;
   bgImage: string;
+  bgImageAlt: string;
   nameProject: string;
   descriptionProject: string;
   liveUrl: string;
@@ -14,6 +15,7 @@ type ProjecstProps = {
 export function ProjectWindow({
   title,
   bgImage,
+  bgImageAlt,
   nameProject,
   descriptionProject,
   liveUrl,
@@ -32,17 +34,17 @@ export function ProjectWindow({
         </div>
 
         <div className="flex min-w-0 items-center justify-center gap-1.5">
-          <img src={bgImage} alt="#" className="w-12 sm:w-16" />
+          <img src={`/${bgImage}`} alt={bgImageAlt} className="w-12 sm:w-16" loading="lazy" />
           <span className="truncate text-sm font-semibold text-[#8e9192] sm:text-lg">{title}</span>
         </div>
       </div>
 
       {/* corpo janela */}
       <div className="relative flex w-full flex-col gap-4 overflow-hidden border border-[#262626] bg-[#111111] p-4 text-xs sm:p-7 sm:text-sm">
-        {/* <div className="pointer-events-none absolute inset-0 bg-[url('/logo-full-w.svg')] bg-size-[80%] bg-center bg-no-repeat opacity-25" /> */}
         <div
           className="pointer-events-none absolute inset-0 bg-center bg-no-repeat opacity-10"
-          style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "80%" }}
+          style={{ backgroundImage: `url(/${bgImage})`, backgroundSize: "80%" }}
+          aria-hidden="true"
         />
         <div className="flex">
           <p className="text-(--txt-purple-window)">
@@ -67,7 +69,13 @@ export function ProjectWindow({
             description:{" "}
             <span className="text-(--txt-blue-low-window)">"{descriptionProject}"</span>,
           </p>
-          <a className="w-full break-all pl-4 text-(--txt-window)" href={liveUrl}>
+          <a
+            className="w-full break-all pl-4 text-(--txt-window)"
+            href={liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Abrir projeto ${nameProject} em nova aba`}
+          >
             liveUrl: <span className="text-(--txt-blue-low-window)">"{liveUrl}"</span>,
           </a>
           <p className="pl-4 text-(--txt-window)">

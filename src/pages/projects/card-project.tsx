@@ -5,7 +5,7 @@ export function CardProject() {
     <div className="flex w-[368px] justify-center border border-[#262626FF] bg-[#1e2020FF]">
       <div>
         <div className="relative flex h-[192px] w-[368px] items-center justify-center bg-[#141c1d] before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.08),transparent_60%)]">
-          <img src="/logo-full-w.svg" alt="" />
+          <img src="/sindsaude-pa.svg" alt="Logotipo do projeto SindSaúde Pará" />
           <div className="absolute bottom-5 h-px w-[340px] bg-linear-to-r from-transparent via-(--txt-blue-strong-window) to-transparent" />
         </div>
 
@@ -28,7 +28,13 @@ export function CardProject() {
           </div>
 
           <div className="flex gap-1.5">
-            <a href="https://sindsaudepa.org.br" className="text-(--txt-blue-strong-window)">
+            <a
+              href="https://sindsaudepa.org.br"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Abrir projeto SindSaúde Pará em nova aba"
+              className="text-(--txt-blue-strong-window)"
+            >
               VER PROJETO
             </a>
             <ArrowRight className="text-(--txt-blue-strong-window)" />

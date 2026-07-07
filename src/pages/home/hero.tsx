@@ -10,14 +10,17 @@ export function Hero() {
           Disponível para novos projetos
         </span>
         <div className="flex max-w-[430px] flex-col">
-          <h2 className="text-[##e2e2e2FF]; text-4xl font-bold sm:text-5xl">
-            Construindo o futuro através de códigos.
+          <h1 id="hero-title" className="text-4xl font-bold text-[#e2e2e2] sm:text-5xl">
+            Alves Jhonata, Dev FullStack | RPA
+          </h1>
+
+          <h2 className="text-4xl font-bold text-[#e2e2e2] sm:text-xl">
+            Criando soluções através da tecnologia
           </h2>
         </div>
         <p className="text-base leading-8 sm:text-lg lg:text-xl">
-          Desenvolvedor Full-Stack apaixonado por criar aplicações modernas, rápidas e fáceis de
-          usar. Transformo ideias em soluções digitais com foco em qualidade, desempenho e uma ótima
-          experiência para o usuário.
+          Dev FullStack e RPA criando aplicações web, automações inteligentes e soluções digitais
+          com JavaScript, TypeScript, Next.js, Vite.js, Tailwind.css, Node.js e Python.
         </p>
 
         <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">

@@ -18,6 +18,7 @@ type ThemeProviderState = {
 
 const COLOR_SCHEME_QUERY = "(prefers-color-scheme: dark)";
 const THEME_VALUES: Theme[] = ["dark", "light", "system"];
+const canUseDOM = typeof window !== "undefined" && typeof document !== "undefined";
 
 const ThemeProviderContext = React.createContext<ThemeProviderState | undefined>(undefined);
 
@@ -30,6 +31,10 @@ function isTheme(value: string | null): value is Theme {
 }
 
 function getSystemTheme(): ResolvedTheme {
+  if (!canUseDOM) {
+    return "dark";
+  }
+
   if (window.matchMedia(COLOR_SCHEME_QUERY).matches) {
     return "dark";
   }
@@ -38,6 +43,10 @@ function getSystemTheme(): ResolvedTheme {
 }
 
 function disableTransitionsTemporarily() {
+  if (!canUseDOM) {
+    return () => undefined;
+  }
+
   const style = document.createElement("style");
   style.appendChild(
     document.createTextNode(
@@ -81,6 +90,10 @@ export function ThemeProvider({
   ...props
 }: ThemeProviderProps) {
   const [theme, setThemeState] = React.useState<Theme>(() => {
+    if (!canUseDOM) {
+      return defaultTheme;
+    }
+
     const storedTheme = localStorage.getItem(storageKey);
     if (isTheme(storedTheme)) {
       return storedTheme;
@@ -91,7 +104,10 @@ export function ThemeProvider({
 
   const setTheme = React.useCallback(
     (nextTheme: Theme) => {
-      localStorage.setItem(storageKey, nextTheme);
+      if (canUseDOM) {
+        localStorage.setItem(storageKey, nextTheme);
+      }
+
       setThemeState(nextTheme);
     },
     [storageKey]
@@ -99,6 +115,10 @@ export function ThemeProvider({
 
   const applyTheme = React.useCallback(
     (nextTheme: Theme) => {
+      if (!canUseDOM) {
+        return;
+      }
+
       const root = document.documentElement;
       const resolvedTheme = nextTheme === "system" ? getSystemTheme() : nextTheme;
       const restoreTransitions = disableTransitionOnChange ? disableTransitionsTemporarily() : null;

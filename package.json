@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && pnpm build:client && pnpm build:server && pnpm prerender",
+    "build:client": "vite build",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server --emptyOutDir false",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "prerender": "node scripts/prerender.mjs",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },

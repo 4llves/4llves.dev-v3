@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B0F14"/>
+  <rect x="60" y="60" width="1080" height="510" rx="28" fill="#111111" stroke="#262626"/>
+  <circle cx="112" cy="112" r="8" fill="#F87171"/>
+  <circle cx="140" cy="112" r="8" fill="#FBBF24"/>
+  <circle cx="168" cy="112" r="8" fill="#4ADE80"/>
+  <text x="210" y="120" fill="#8E9192" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="700">4llves.dev</text>
+  <text x="96" y="220" fill="#E2E2E2" font-family="Montserrat, Arial, sans-serif" font-size="64" font-weight="700">Alves Jhonata</text>
+  <text x="96" y="292" fill="#67E8F9" font-family="Nunito Sans, Arial, sans-serif" font-size="34" font-weight="700">Dev FullStack • Dev RPA</text>
+  <text x="96" y="366" fill="#C4C7C7" font-family="Nunito Sans, Arial, sans-serif" font-size="28">
+    <tspan x="96" dy="0">JavaScript, TypeScript, Tailwind CSS, Next.js, Vite.js,</tspan>
+    <tspan x="96" dy="42">Node.js e Python para criar soluções digitais escaláveis.</tspan>
+  </text>
+  <rect x="96" y="458" width="280" height="52" rx="26" fill="#141C1D" stroke="#262626"/>
+  <text x="126" y="492" fill="#67E8F9" font-family="Nunito Sans, Arial, sans-serif" font-size="24" font-weight="700">Parauapebas - PA</text>
+  <rect x="818" y="152" width="226" height="226" rx="28" fill="#141C1D" stroke="#262626"/>
+  <path d="M878 226L930 278L878 330" stroke="#67E8F9" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M964 344H1004" stroke="#67E8F9" stroke-width="22" stroke-linecap="round"/>
+</svg>

@@ -14,25 +14,21 @@ export function AboutMe() {
         <div>
           <h2 className="text-3xl text-[#e2e2e2FF] sm:text-4xl">A Jornada</h2>
         </div>
-
-        <div>
-          <span>
-            {"{{"}DATA:DOCUMENT:DOCUMENT_1{"}}"}
-          </span>
-        </div>
         <div>
           <p className="text-sm leading-7 sm:text-base sm:leading-8">
-            Olá sou Jhonata Alves, tenho 29 anos e sou apaixonado por tecnologia desde os 9.
-            Atualmente atuo como Desenvolvedor Full-Stack, criando aplicações web modernas, rápidas
-            e intuitivas. Moro no Pará e estou sempre em busca de aprender novas tecnologias e
-            transformar boas ideias em soluções digitais.
+            Sou Alves Jhonata, profissional de tecnologia baseado em Parauapebas - PA, com atuação
+            como Dev FullStack e Dev RPA. Desenvolvo aplicações web modernas, interfaces bem
+            construídas e automações de processos com foco em eficiência, performance e experiência
+            do usuário. Minha rotina envolve JavaScript, TypeScript, CSS, Tailwind CSS, Next.js,
+            Vite.js, Node.js e Python, sempre buscando transformar ideias em soluções digitais
+            consistentes e escaláveis.
           </p>
         </div>
 
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-sm border border-[#262626] px-3 py-1">FRONT END</span>
-          <span className="rounded-sm border border-[#262626] px-3 py-1">BACK END</span>
-          <span className="rounded-sm border border-[#262626] px-3 py-1">UI/UX DESIGN</span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">FULLSTACK</span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">JAVASCRIPT</span>
+          <span className="rounded-sm border border-[#262626] px-3 py-1">TYPESCRIPT</span>
           <span className="rounded-sm border border-[#262626] px-3 py-1">RPA</span>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { ProjectWindow } from "./project-window";
 type ProjecstProps = {
   title: string;
   bgImage: string;
+  bgImageAlt: string;
   nameProject: string;
   descriptionProject: string;
   liveUrl: string;
@@ -15,6 +16,7 @@ const projects: ProjecstProps[] = [
   {
     title: "sindsaudepa.org.br",
     bgImage: "sindsaude-pa.svg",
+    bgImageAlt: "Logotipo do projeto SindSaúde Pará",
     nameProject: "SindSaúde",
     descriptionProject: "Portal institucional do SindSaúde Pará",
     liveUrl: "https://sindsaudepa.org.br/",
@@ -25,6 +27,7 @@ const projects: ProjecstProps[] = [
   {
     title: "movemarias.org.br",
     bgImage: "move-marias.svg",
+    bgImageAlt: "Logotipo do projeto Move Marias",
     nameProject: "Move Marias",
     descriptionProject: "Portal institucional da Move Marias",
     liveUrl: "https://www.movemarias.org.br/",
@@ -50,6 +53,7 @@ export function ProjectsPage() {
                 key={i}
                 title={item.title}
                 bgImage={item.bgImage}
+                bgImageAlt={item.bgImageAlt}
                 nameProject={item.nameProject}
                 descriptionProject={item.descriptionProject}
                 liveUrl={item.liveUrl}

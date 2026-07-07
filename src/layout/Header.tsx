@@ -24,10 +24,16 @@ export function Header() {
     <div className="fixed inset-x-0 top-0 z-50 flex justify-center border-b border-white/10 bg-background/80 backdrop-blur-md">
       <header className="w-full max-w-6xl px-4 py-3 sm:px-6 lg:px-0 lg:py-0">
         <div className="flex items-center justify-between lg:h-16">
-          <a href="#">4llves.dev</a>
+          <a
+            href="#hero"
+            className="flex items-center justify-between gap-3 text-xl font-extrabold"
+          >
+            <img src="/4llvesdev.svg" alt="Logotipo 4llves.dev" className="w-8 object-contain" />
+            4llves.dev
+          </a>
 
           <div className="flex items-center gap-3 lg:hidden">
-            <img src="/terminal.svg" alt="Terminal" className="w-6" />
+            <img src="/terminal.svg" alt="Ícone de terminal" className="w-6" />
             <button
               type="button"
               onClick={handleToggleMenu}
@@ -44,7 +50,8 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="font-bold hover:text-(--txt-blue-strong-window)"
+                aria-label={`Ir para a seção ${item.label}`}
+                className="text-base font-bold hover:text-(--txt-blue-strong-window)"
               >
                 {item.label}
               </a>
@@ -52,7 +59,7 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <img src="/terminal.svg" alt="Terminal" />
+            <img src="/terminal.svg" alt="Ícone de terminal" />
           </div>
         </div>
 
@@ -66,6 +73,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={handleCloseMenu}
+                aria-label={`Ir para a seção ${item.label}`}
                 className="border-b border-white/10 px-4 py-3 text-sm text-[#d5d9dd] last:border-b-0"
               >
                 {item.label}
